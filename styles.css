@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,200;1,300;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
 * {
   margin: 0;
@@ -17,14 +17,14 @@ p {
   color: rgb(85, 85, 85);
 }
 
-/* Transition */
+/* TRANSITION */
 
 a,
 .btn {
   transition: all 300ms ease;
 }
 
-/* Desktop Navigation */
+/* DESKTOP NAV */
 
 nav,
 .nav-links {
@@ -64,13 +64,13 @@ a:hover {
   cursor: default;
 }
 
-/* Hamburger Menu */
+/* HAMBURGER MENU */
 
 #hamburger-nav {
   display: none;
 }
 
-#hamburger-menu {
+.hamburger-menu {
   position: relative;
   display: inline-block;
 }
@@ -86,7 +86,7 @@ a:hover {
 
 .hamburger-icon span {
   width: 100%;
-  height: 2%;
+  height: 2px;
   background-color: black;
   transition: all 0.3 ease-in-out;
 }
@@ -94,10 +94,54 @@ a:hover {
 .menu-links {
   position: absolute;
   top: 100%;
-  right: 0%;
+  right: 0;
   background-color: white;
   width: fit-content;
   max-height: 0;
   overflow: hidden;
-  transition: all;
+  transition: all 0.3 ease-in-out;
 }
+
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+  list-style: none;
+}
+
+.menu-links.open {
+  max-height: 300px;
+}
+
+.hamburger-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+}
+
+.hamburger-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+.hamburger-icon span:first-child {
+  opacity: 1;
+}
+
+.hamburger-icon span:first-child {
+  transform: none;
+}
+
+/* Sections */
