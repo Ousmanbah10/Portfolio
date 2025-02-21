@@ -8,6 +8,15 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
+    <!-- Background Video -->
+
+    <div class="video-container">
+      <video muted loop playsinline id="background-video">
+        <source src="assets/video2.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+
     <nav id="desktop-nav">
       <div class="logo">
         <a href="index.html">OUSMAN BAH</a>
@@ -17,7 +26,7 @@
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-         <li><a href="#interests">Interest & Activities </a></li>
+          <li><a href="#interest">Interest & Activities </a></li>
           <li><a href="#contact">Contacts</a></li>
         </ul>
       </div>
@@ -45,7 +54,7 @@
 
     <section id="profile">
       <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="" />
+        <img class="img-rounded" src="./assets/about-pic.png" alt="" />
       </div>
 
       <div class="section__text">
@@ -54,7 +63,10 @@
         <h1 class="title">Ousman Bah</h1>
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
-          <button class="btn btn-color-1" onclick="window.open('./RESUME.pdf')">
+          <button
+            class="btn btn-color-1"
+            onclick="window.open('./assets/MYNEWRESUME.pdf')"
+          >
             Download My Resume
           </button>
           <button
@@ -91,9 +103,9 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/profile-pic.png"
             alt="Profile picture"
-            class="about-pic"
+            class="about-pic img-rounded"
           />
         </div>
         <div class="about-details-container">
@@ -118,20 +130,21 @@
               <h3>Experience</h3>
               <p>2+ years</p>
             </div>
-            
           </div>
 
           <div class="text-container">
             <p>
-              I am a dedicated and passionate Computer Science student with a
-              strong foundation in programming and problem-solving. My academic
-              journey has equipped me with essential skills in algorithms, data
-              structures, and software development, enabling me to approach
-              challenges with analytical rigor. I thrive in collaborative
-              environments where I can contribute to innovative projects and
-              learn from diverse perspectives. I believe in the power of
-              technology to drive positive change and am committed to developing
-              solutions that enhance efficiency and effectiveness.
+              <strong>
+                I am a driven Computer Science student with a strong foundation
+                in programming, algorithms, and software development. My passion
+                lies in problem-solving and building innovative solutions that
+                drive efficiency and impact. Through my academic journey and
+                hands-on experiences, I have honed my skills in collaborative
+                development, competitive programming, and technical mentorship.
+                I thrive in dynamic environments where I can contribute
+                meaningfully, learn from diverse perspectives, and leverage
+                technology to create positive change.
+              </strong>
             </p>
           </div>
         </div>
@@ -146,113 +159,161 @@
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Technical Skills & Course Work</h1>
+
+      <!-- Here -->
+      <h1 class="title">Technical Skills & Professional Experience</h1>
       <div>
         <!-- TECHNICAL EXPERIENCE -->
-        <h3 class="title2">Technical Experience</h3>
+        <h5 class="title2">Technical Skills</h5>
         <div class="experience-details-container">
           <div class="about-containers">
-            <!-- heyy -->
-
             <div class="skills-container">
-              <div class="details-container">
+              <!-- Programming Languages & Technologies -->
+              <div class="details-container tech-container">
                 <h2 class="experience-sub-title">
                   Programming Languages & Technologies
                 </h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Python</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Java</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>SQL</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Google Cloud Shell</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>HTML</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>CSS</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>JavaScript</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>React Js</h4></div>
-                  </article>
-                </div>
+                <ul class="experience-list">
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    <strong>Languages:</strong> Python, Java, JavaScript, SQL,
+                    HTML/CSS
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    <strong>Frameworks:</strong> Node.js, Express.js, Django,
+                    MEAN Stack
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    <strong>Databases:</strong> MongoDB, PostgreSQL
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    <strong>Cloud & DevOps:</strong> Google Cloud Platform,
+                    Docker
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    <strong>Tools:</strong> VS Code, Eclipse, GitHub, Linux
+                  </li>
+                </ul>
               </div>
 
-              <div class="details-container">
-                <h2 class="experience-sub-title">Relevant Course Work</h2>
-                <div class="article-container">
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Python programming I & II</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Data-Structures & Algorithm</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Calculus I</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Discrete Math</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Web development</h4></div>
-                  </article>
-                  <article>
-                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
-                    <div><h4>Programming in Java I & II</h4></div>
-                  </article>
-                </div>
+              <!-- Relevant Course Work -->
+              <div class="details-container tech-container">
+                <h2 class="experience-sub-title">Relevant Coursework</h2>
+                <ul class="experience-list">
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Calculus I
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Systems Programming
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Database Management
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Web Development
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Artificial Intelligence
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Discrete Math
+                  </li>
+                  <li>
+                    <img
+                      src="./assets/checkmark.png"
+                      alt="Icon"
+                      class="tech-icon"
+                    />
+                    Data Structures & Algorithms
+                  </li>
+                </ul>
               </div>
             </div>
           </div>
+        </div>
 
-          <div class="btn-container">
-            <button
-              class="btn btn-color-2 project-btn"
-              onclick="window.location.href='certifications.html'"
-            >
-              View my Certifcations
-            </button>
-          </div>
+        <!-- Here -->
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.location.href='certifications.html'"
+          >
+            View my Certifcations
+          </button>
+        </div>
 
-          <!-- End of technical experience -->
-          <!-- Second section -->
-          <div class="professional-experience">
-            <h1 class="title2">Professional Experience</h1>
-            <!-- new div -->
-            <div class="details-container2">
+        <!-- End of technical experience -->
+        <!-- Second section -->
+        <!-- Second section -->
+        <div class="professional-experience">
+          <h1 class="title2">Professional Experience</h1>
+          <div class="details-container2">
             <div class="experience-details-container">
               <div class="details-container">
                 <h5>Google Tech Exchange</h5>
                 <ul>
                   <li>
-                    Selected for the Google Tech Exchange Program, a prestigious
-                    initiative for top students in computer science.
+                    Selected for the Google Tech Exchange Program, an elite
+                    initiative for top computer science students.
                   </li>
                   <li>
-                    Working on industry-driven projects and networked with
-                    Google engineers to enhance technical and career skills.
+                    Developing industry-driven projects and collaborating with
+                    Google engineers to enhance software development and
+                    problem-solving skills.
                   </li>
                 </ul>
               </div>
@@ -261,12 +322,25 @@
                 <h5>ICPC & ShellHacks Hackathon | Sept 2024 & Oct 2024</h5>
                 <ul>
                   <li>
-                    Represented MSUM and led the FIU team in ICPC, demonstrating
-                    problem-solving skills.
+                    Represented MSUM and led the FIU team in ICPC, mentoring
+                    teammates in advanced problem-solving techniques and
+                    competitive programming strategies.
                   </li>
                   <li>
-                    Gained hands-on experience in Machine Learning, Web
-                    Development, and Robotics.
+                    Served as part of the FIU High School Competitive
+                    Programming Hosting Committee, assisting in organizing and
+                    managing programming contests for high school students.
+                  </li>
+                  <li>
+                    Trained and mentored high school teachers to prepare their
+                    students for competitive programming, ensuring they
+                    understood problem-solving techniques, algorithms, and
+                    contest strategies.
+                  </li>
+                  <li>
+                    Developed expertise in Machine Learning, Web Development,
+                    and Robotics through hands-on hackathon challenges and
+                    technical workshops.
                   </li>
                 </ul>
               </div>
@@ -274,10 +348,18 @@
               <div class="details-container">
                 <h5>ACM Club MSUM | Aug 2023 – July 2024</h5>
                 <ul>
-                  <li>Secured 2nd place in the ACM programming contest.</li>
                   <li>
-                    Tutored 5 students in Python, helping them achieve grades of
-                    B or higher.
+                    Secured 2nd place in the ACM programming contest, showcasing
+                    proficiency in data structures and algorithms.
+                  </li>
+                  <li>
+                    Conducted peer-to-peer tutoring, mentoring 5 students in
+                    Python programming and problem-solving techniques.
+                  </li>
+                  <li>
+                    Led twice-weekly coding sessions, ensuring students achieved
+                    a B or higher in coursework through structured learning
+                    plans.
                   </li>
                 </ul>
               </div>
@@ -288,12 +370,25 @@
                 </h5>
                 <ul>
                   <li>
-                    Implemented the first electronic fund transfer system in The
-                    Gambia.
+                    Led the transition to The Gambia’s first electronic fund
+                    transfer system, streamlining government payments and
+                    reducing processing time from three days to same-day
+                    transactions.
                   </li>
                   <li>
-                    Enhanced financial accountability through efficient data
-                    management.
+                    Managed and processed nationwide payments, including
+                    salaries, pensions, and vendor transactions, ensuring timely
+                    disbursement that impacted thousands of lives.
+                  </li>
+                  <li>
+                    Acted as a liaison between government accountants and
+                    software vendors, ensuring a seamless integration of
+                    financial systems and training staff on the new platform.
+                  </li>
+                  <li>
+                    Collaborated with high-ranking officials, including Central
+                    Bank executives and government ministers, gaining firsthand
+                    insight into high-level financial decision-making.
                   </li>
                 </ul>
               </div>
@@ -309,6 +404,7 @@
             </div>
           </div>
         </div>
+
         <!-- Second section here  -->
       </div>
     </section>
@@ -323,7 +419,7 @@
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-1.png"
+                src="./assets/EcommerceStore.jpeg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -334,20 +430,20 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
               >
-                Github
+                Live Demo
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
+                onclick="location.href='https://github.com/Ousmanbah10/E-Commerce-API.git'"
               >
-                Live Demo
+                Github
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-2.png"
+                src="./assets/taskmanager.jpeg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -358,20 +454,20 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
               >
-                Github
+                Live Demo
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
+                onclick="location.href='https://github.com/Ousmanbah10/TASK-MANAGER.git'"
               >
-                Live Demo
+                Github
               </button>
             </div>
           </div>
           <div class="details-container color-container">
             <div class="article-container">
               <img
-                src="./assets/project-3.png"
+                src="./assets/aiChatbot.jpeg"
                 alt="Project 1"
                 class="project-img"
               />
@@ -382,16 +478,24 @@
                 class="btn btn-color-2 project-btn"
                 onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
               >
-                Github
+                Live Demo
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
+                onclick="location.href='https://github.com/Ousmanbah10/conversational-app-api.git'"
               >
-                Live Demo
+                Github
               </button>
             </div>
           </div>
+        </div>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2 project-btn"
+            onclick="window.location.href='https://www.github.com/ousmanbah10'"
+          >
+            View More Projects
+          </button>
         </div>
       </div>
       <img
@@ -402,21 +506,86 @@
       />
     </section>
 
-<!-- Interest and extra curricular activities -->
-<section id="interest">
-      <p class="section__text__p1">
-        INTERESTS & EXTRACURRICULAR ACTIVITIES
-      </p>
+    <!-- Interest and Extracurricular Activities -->
+    <section id="interest">
+      <p class="section__text__p1">INTERESTS & EXTRACURRICULAR ACTIVITIES</p>
       <h1 class="title">INTERESTS & EXTRACURRICULAR ACTIVITIES</h1>
- 
+
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="skills-container">
+            <!-- Dell EXCEL Program -->
+            <div class="details-container activity-container">
+              <h2 class="experience-sub-title">Dell EXCEL Program</h2>
+              <p><strong>Duration:</strong> 8-week case competition</p>
+              <p>
+                Participated in a hands-on competition focused on AI and
+                modernization, collaborating with a diverse team to analyze
+                real-world business problems and develop AI-driven solutions.
+              </p>
+              <img
+                src="./assets/Dell.jpeg"
+                alt="Arrow Icon"
+                onclick="location.href='https://www.wayup.com/i-Information-Technology-and-Services-j-Excel-with-Dell-2023-Dell-Technologies-126896945361855/'"
+              />
+            </div>
+
+            <!-- UKG Academy for CS & Education -->
+            <div class="details-container activity-container">
+              <h2 class="experience-sub-title">
+                UKG Academy for CS & Education
+              </h2>
+              <p><strong>Role:</strong> Member & Volunteer</p>
+              <p>
+                Assisted in organizing high school programming competitions,
+                guiding students in problem-solving, and fostering an interest
+                in computer science and technology careers.
+                <img
+                  src="./assets/UKG.png"
+                  alt="Arrow Icon"
+                  onclick="location.href='https://academy.cs.fiu.edu'"
+                />
+              </p>
+            </div>
+
+            <!-- Break Through Tech Miami -->
+            <div class="details-container activity-container">
+              <h2 class="experience-sub-title">Break Through Tech Miami</h2>
+              <p><strong>Role:</strong> Active Member</p>
+              <p>
+                Engaged in initiatives supporting underrepresented groups in
+                tech by participating in mentorship programs, networking events,
+                and skill-building workshops aimed at fostering inclusivity.
+              </p>
+              <img
+                src="./assets/BTT.jpeg"
+                alt="Arrow Icon"
+                onclick="location.href='https://miami.breakthroughtech.org'"
+              />
+            </div>
+
+            <!-- INIT FIU -->
+            <div class="details-container activity-container">
+              <h2 class="experience-sub-title">INIT FIU</h2>
+              <p><strong>Role:</strong> Member</p>
+              <p>
+                Attended workshops and seminars on emerging technologies,
+                software development, and entrepreneurship, gaining insights
+                into real-world applications and industry best practices.
+              </p>
+              <img
+                src="./assets/init_fiu.jpeg"
+                alt="Arrow Icon"
+                onclick="location.href='https://www.weareinit.org'"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
-<!-- Hobbies and  -->
-
-
-
 
     <section id="contact">
-      <p class="section__text__p1">Get In Touch </p>
+      <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -446,12 +615,6 @@
       </div>
     </section>
 
-
-
-
-
-
-
     <footer>
       <nav>
         <div class="nav-links-container">
@@ -459,13 +622,33 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
-            <li><a href="#interests">Interest & Activities </a></li>
+            <li><a href="#interest">Interest & Activities </a></li>
             <li><a href="#contact">Contacts</a></li>
           </ul>
         </div>
       </nav>
       <p>Copyright &#169; 2025 Ousman Bah. All rights reserved</p>
     </footer>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const video = document.getElementById("background-video");
+
+        if (video) {
+          video.muted = true; // Ensure it's muted
+          video.loop = true; // Ensure it loops
+          video.autoplay = true; // Attempt to autoplay
+          video.playsInline = true; // Ensure it works on mobile
+
+          video.play().catch((error) => {
+            console.error("Autoplay prevented:", error);
+            // If autoplay is blocked, play video on user interaction
+            document.body.addEventListener("click", () => video.play(), {
+              once: true,
+            });
+          });
+        }
+      });
+    </script>
   </body>
   <script src="script.js" alt="Ousman Bah Profile Picture"></script>
 </html>

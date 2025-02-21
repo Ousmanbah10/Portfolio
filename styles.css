@@ -17,6 +17,44 @@ p {
   color: rgb(85, 85, 85);
 }
 
+/* Background Video Styling */
+.video-container {
+  position: fixed; /* Keeps video fixed in background */
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1; /* Places it behind content */
+  overflow: hidden;
+}
+
+#background-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.3;
+}
+
+/* Ensure content is above the video */
+body {
+  position: relative;
+  z-index: 1; /* Ensures all content is above the video */
+  background-color: rgba(255, 255, 255, 0.9); /* Slight transparency */
+}
+
+/* Make sure navbar is visible */
+nav {
+  position: relative;
+  z-index: 10; /* Keeps navbar on top */
+  background: rgba(
+    255,
+    255,
+    255,
+    0.95
+  ); /* Slight transparency for readability */
+  padding: 10px 0;
+}
+
 /* TRANSITION */
 
 a,
@@ -186,6 +224,7 @@ section {
 
 .section__text__p1 {
   text-align: center;
+  font-size: 1.5rem;
 }
 
 .section__text__p2 {
@@ -313,8 +352,8 @@ section {
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(249, 246, 246) 0.1rem solid;
+  border-color: rgb(247, 244, 244);
   text-align: center;
   width: 110%;
 }
@@ -324,6 +363,11 @@ section {
   height: 80%;
 }
 
+.img-rounded {
+  border-radius: 20px;
+  overflow: hidden;
+}
+
 .section__pic-container {
   height: 400px;
   width: 400px;
@@ -331,6 +375,44 @@ section {
 }
 
 /* EXPERIENCE SECTION */
+.experience-list {
+  list-style: none;
+  padding: 0;
+}
+
+.experience-list li {
+  display: flex; /* Aligns icon and text horizontally */
+  align-items: left; /* Centers items vertically */
+  gap: 5px; /* Adds spacing between icon and text */
+}
+
+.tech-container {
+  text-align: left;
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three columns */
+  gap: 1rem;
+  justify-content: right;
+  align-items: center;
+}
+
+.tech-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: flex-end;
+}
+
+.tech-icon {
+  width: 30px;
+  height: 30px;
+}
 
 .skills-container {
   display: flex;
@@ -348,10 +430,11 @@ section {
 }
 
 .experience-sub-title {
-  color: rgb(85, 85, 85);
+  color: rgb(18, 17, 17);
   font-weight: 600;
   font-size: 1.75rem;
   margin-bottom: 2rem;
+  text-align: center;
 }
 
 .experience-details-container {
