@@ -292,6 +292,12 @@ section {
   bottom: 2.5rem;
 }
 
+.learn {
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+}
+
 .details-container {
   padding: 1.5rem;
   flex: 1;
@@ -300,6 +306,17 @@ section {
   border: rgb(53, 53, 53) 0.1rem solid;
   border-color: rgb(163, 163, 163);
   text-align: center;
+}
+
+.details-container2 {
+  padding: 1.5rem;
+  flex: 1;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  border-color: rgb(163, 163, 163);
+  text-align: center;
+  width: 110%;
 }
 
 .section-container {
@@ -315,8 +332,19 @@ section {
 
 /* EXPERIENCE SECTION */
 
+.skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem; /* Adjust spacing between boxes */
+}
+
 #experience {
   position: relative;
+}
+
+.title2 {
+  text-align: center;
 }
 
 .experience-sub-title {
@@ -350,6 +378,105 @@ article {
 
 article .icon {
   cursor: default;
+}
+
+/* Professional Experience */
+/* PROFESSIONAL EXPERIENCE SECTION */
+.professional-experience {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+  padding: 2rem;
+  width: 90%; /* Increase width */
+  max-width: 1200px; /* Ensure it looks good on large screens */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.professional-experience .details-container {
+  width: 90%; /* Reduce width so they don't align fully */
+  max-width: 1000px; /* Optional: Set max width for larger screens */
+  padding: 1.5rem;
+  margin: 1rem auto; /* Center the boxes with spacing */
+}
+
+/* Section Title */
+.title2 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+/* Experience Container */
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  width: 100%; /* Ensure it fills the space */
+}
+
+/* Individual Experience Box */
+.details-container {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  width: 80%;
+  max-width: 800px;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Hover Effect */
+.details-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Job Title & Dates */
+.details-container h5 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 0.5rem;
+}
+
+/* Job Description List */
+.details-container ul {
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+/* List Items */
+.details-container ul li {
+  font-size: 1rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+/* Experience Icon */
+.details-container .icon {
+  width: 20px;
+  margin-right: 10px;
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+  .details-container {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .details-container h5 {
+    font-size: 1rem;
+  }
+
+  .details-container ul li {
+    font-size: 0.9rem;
+  }
 }
 
 /* PROJECTS SECTION */
@@ -428,4 +555,184 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Certifications Section */
+
+.certifications {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.certifications-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  align-items: stretch; /* Ensures all boxes align properly */
+}
+
+/* INDIVIDUAL CERTIFICATION CARD */
+.certification-card {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Ensures button stays at bottom */
+  height: 90%; /* Ensures uniform height */
+}
+
+.certification-card:hover {
+  transform: translateY(-5px);
+}
+
+.certification-card h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.certification-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+/* BUTTON STAYS AT THE BOTTOM */
+
+.certification-card .btn {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(53, 53, 53);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  display: flex; /* Use flexbox for centering */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  margin-top: auto; /* Pushes button to bottom */
+  width: 60%; /* Adjust button width */
+  margin-left: auto;
+  margin-right: auto;
+  transition: all 0.3s ease;
+}
+
+.certification-card .btn:hover {
+  background: rgb(0, 0, 0);
+}
+
+/* EXPERIENCE CARD STYLING */
+.experience-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-card h3 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.experience-card p {
+  font-size: 1rem;
+  color: #444;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* BULLETED LIST STYLING */
+.experience-card ul {
+  padding-left: 1.5rem;
+  list-style-type: disc;
+  margin-bottom: 1rem;
+}
+
+.experience-card ul li {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-bottom: 0.5rem;
+}
+
+/* LIST ITEM STYLING */
+.experience-card ul li::marker {
+  color: rgb(53, 53, 53);
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* LEARN MORE BUTTON */
+.experience-card .btn {
+  text-decoration: none;
+  font-weight: 600;
+  background: rgb(53, 53, 53);
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  display: inline-block;
+  width: fit-content;
+  align-self: flex-start;
+  transition: all 0.3s ease;
+}
+
+.experience-card .btn:hover {
+  background: rgb(0, 0, 0);
+}
+
+/* Experience Page */
+
+/* Experience Section */
+.experience-page {
+  text-align: center;
+  padding: 4rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Experience Card */
+.experience-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 3rem;
+  text-align: left;
+}
+
+/* Experience Content */
+.experience-content {
+  text-align: left;
+  margin-bottom: 2rem;
+}
+
+/* Experience Images - Grid Layout */
+.experience-image-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three images per row */
+  gap: 1rem; /* Space between images */
+  justify-content: center;
+  align-items: center;
+}
+
+/* Individual Image Styling */
+.experience-image img {
+  width: 100%; /* Makes images fill the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }

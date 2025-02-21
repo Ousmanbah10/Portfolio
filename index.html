@@ -9,12 +9,15 @@
   </head>
   <body>
     <nav id="desktop-nav">
-      <div class="logo">OUSMAN BAH</div>
+      <div class="logo">
+        <a href="index.html">OUSMAN BAH</a>
+      </div>
       <div>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
+         <li><a href="#interests">Interest & Activities </a></li>
           <li><a href="#contact">Contacts</a></li>
         </ul>
       </div>
@@ -34,6 +37,7 @@
           <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
 
           <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
           <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
         </div>
       </div>
@@ -50,11 +54,14 @@
         <h1 class="title">Ousman Bah</h1>
         <p class="section__text__p2">Full Stack Developer</p>
         <div class="btn-container">
+          <button class="btn btn-color-1" onclick="window.open('./RESUME.pdf')">
+            Download My Resume
+          </button>
           <button
             class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
+            onclick="window.open('./SSR_TSRPT.pdf')"
           >
-            Download My Resume
+            Download My Transcript
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -93,33 +100,38 @@
           <div class="about-containers">
             <div class="details-container">
               <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>2+ years</p>
-            </div>
-            <div class="details-container">
-              <img
                 src="./assets/education.png"
                 alt="Education icon"
                 class="icon"
               />
-              <h3>Student BSC Computer Science</h3>
-              <p>Sophomore</p>
+              <h3>Florida International University</h3>
+              <h4>BSC Computer Science</h4>
+              <p>Sophomore | GPA 4.0</p>
             </div>
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <!-- NEED TO CHANGE THIS PART -->
+              <h3>Experience</h3>
+              <p>2+ years</p>
+            </div>
+            
           </div>
 
           <div class="text-container">
             <p>
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel modi
-              dolorem error illo ratione quasi vero delectus natus
-              necessitatibus? Laborum, reprehenderit minus asperiores
-              exercitationem reiciendis dignissimos recusandae porro voluptatem
-              corporis et ex quaerat error, obcaecati dolores in officiis
-              mollitia qui facilis itaque dolor fugit? Consequuntur cum
-              provident voluptatibus adipisci iure.
+              I am a dedicated and passionate Computer Science student with a
+              strong foundation in programming and problem-solving. My academic
+              journey has equipped me with essential skills in algorithms, data
+              structures, and software development, enabling me to approach
+              challenges with analytical rigor. I thrive in collaborative
+              environments where I can contribute to innovative projects and
+              learn from diverse perspectives. I believe in the power of
+              technology to drive positive change and am committed to developing
+              solutions that enhance efficiency and effectiveness.
             </p>
           </div>
         </div>
@@ -134,139 +146,171 @@
 
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
-      <h1 class="title">Experience</h1>
+      <h1 class="title">Technical Skills & Course Work</h1>
+      <div>
+        <!-- TECHNICAL EXPERIENCE -->
+        <h3 class="title2">Technical Experience</h3>
+        <div class="experience-details-container">
+          <div class="about-containers">
+            <!-- heyy -->
 
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container">
-            <h2 class="experience-sub-title">FrontEnd Development</h2>
-
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
-
-                <div>
-                  <h3>HTML</h3>
-                  <p>Experience</p>
+            <div class="skills-container">
+              <div class="details-container">
+                <h2 class="experience-sub-title">
+                  Programming Languages & Technologies
+                </h2>
+                <div class="article-container">
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Python</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Java</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>SQL</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Google Cloud Shell</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>HTML</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>CSS</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>JavaScript</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>React Js</h4></div>
+                  </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
+              </div>
 
-                <div>
-                  <h3>CSS</h3>
-                  <p>Experience</p>
+              <div class="details-container">
+                <h2 class="experience-sub-title">Relevant Course Work</h2>
+                <div class="article-container">
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Python programming I & II</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Data-Structures & Algorithm</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Calculus I</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Discrete Math</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Web development</h4></div>
+                  </article>
+                  <article>
+                    <img src="./assets/checkmark.png" alt="Icon" class="icon" />
+                    <div><h4>Programming in Java I & II</h4></div>
+                  </article>
                 </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
-
-                <div>
-                  <h3>JavaScript</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
-
-                <div>
-                  <h3>React Js</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
+              </div>
             </div>
           </div>
-          <div class="details-container">
-            <h2 class="experience-sub-title">BackEnd Development</h2>
 
-            <div class="article-container">
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
+          <div class="btn-container">
+            <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.location.href='certifications.html'"
+            >
+              View my Certifcations
+            </button>
+          </div>
 
-                <div>
-                  <h3>Docker</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+          <!-- End of technical experience -->
+          <!-- Second section -->
+          <div class="professional-experience">
+            <h1 class="title2">Professional Experience</h1>
+            <!-- new div -->
+            <div class="details-container2">
+            <div class="experience-details-container">
+              <div class="details-container">
+                <h5>Google Tech Exchange</h5>
+                <ul>
+                  <li>
+                    Selected for the Google Tech Exchange Program, a prestigious
+                    initiative for top students in computer science.
+                  </li>
+                  <li>
+                    Working on industry-driven projects and networked with
+                    Google engineers to enhance technical and career skills.
+                  </li>
+                </ul>
+              </div>
 
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
+              <div class="details-container">
+                <h5>ICPC & ShellHacks Hackathon | Sept 2024 & Oct 2024</h5>
+                <ul>
+                  <li>
+                    Represented MSUM and led the FIU team in ICPC, demonstrating
+                    problem-solving skills.
+                  </li>
+                  <li>
+                    Gained hands-on experience in Machine Learning, Web
+                    Development, and Robotics.
+                  </li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3>Node Js</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
+              <div class="details-container">
+                <h5>ACM Club MSUM | Aug 2023 – July 2024</h5>
+                <ul>
+                  <li>Secured 2nd place in the ACM programming contest.</li>
+                  <li>
+                    Tutored 5 students in Python, helping them achieve grades of
+                    B or higher.
+                  </li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3>Django</h3>
-                  <p>Experience</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
+              <div class="details-container">
+                <h5>
+                  Ministry of Finance | Accounts Clerk | Jan 2020 - Aug 2023
+                </h5>
+                <ul>
+                  <li>
+                    Implemented the first electronic fund transfer system in The
+                    Gambia.
+                  </li>
+                  <li>
+                    Enhanced financial accountability through efficient data
+                    management.
+                  </li>
+                </ul>
+              </div>
 
-                <div>
-                  <h3>Streamlit</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
-              <article>
-                <img
-                  src="./assets/checkmark.png"
-                  alt="Experience Icon"
-                  class="icon"
-                />
-
-                <div>
-                  <h3>Git</h3>
-                  <p>Intermediate</p>
-                </div>
-              </article>
+              <div class="btn-container">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="window.location.href='experience.html'"
+                >
+                  Learn More About My Experiences
+                </button>
+              </div>
             </div>
           </div>
         </div>
+        <!-- Second section here  -->
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href='./#projects'"
-      />
     </section>
 
     <section id="projects">
@@ -358,8 +402,21 @@
       />
     </section>
 
+<!-- Interest and extra curricular activities -->
+<section id="interest">
+      <p class="section__text__p1">
+        INTERESTS & EXTRACURRICULAR ACTIVITIES
+      </p>
+      <h1 class="title">INTERESTS & EXTRACURRICULAR ACTIVITIES</h1>
+ 
+    </section>
+<!-- Hobbies and  -->
+
+
+
+
     <section id="contact">
-      <p class="section__text__p1">Get In Touch</p>
+      <p class="section__text__p1">Get In Touch </p>
       <h1 class="title">Contact Me</h1>
       <div class="contact-info-upper-container">
         <div class="contact-info-container">
@@ -378,8 +435,22 @@
             <a href="https://www.linkedin.com/in/ousman-bah"> LinkedIn</a>
           </p>
         </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/phone-icon.png"
+            alt="LinkedIn Icon"
+            class="icon conatct"
+          />
+          <p>+1 (218) 213-7996</p>
+        </div>
       </div>
     </section>
+
+
+
+
+
+
 
     <footer>
       <nav>
@@ -388,6 +459,7 @@
             <li><a href="#about">About</a></li>
             <li><a href="#experience">Experience</a></li>
             <li><a href="#projects">Projects</a></li>
+            <li><a href="#interests">Interest & Activities </a></li>
             <li><a href="#contact">Contacts</a></li>
           </ul>
         </div>
