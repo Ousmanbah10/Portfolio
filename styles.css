@@ -64,6 +64,12 @@ a,
 
 /* DESKTOP NAV */
 
+.new-img {
+  height: 80px;
+  margin-right: 10px;
+  vertical-align: top;
+}
+
 nav,
 .nav-links {
   display: flex;

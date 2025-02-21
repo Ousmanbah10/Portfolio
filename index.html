@@ -19,7 +19,9 @@
 
     <nav id="desktop-nav">
       <div class="logo">
-        <a href="index.html">OUSMAN BAH</a>
+        <a href="index.html"
+          ><img class="new-img img-rounded" src="assets/logo2.png" alt="Google"
+        /></a>
       </div>
       <div>
         <ul class="nav-links">
@@ -629,26 +631,6 @@
       </nav>
       <p>Copyright &#169; 2025 Ousman Bah. All rights reserved</p>
     </footer>
-    <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const video = document.getElementById("background-video");
-
-        if (video) {
-          video.muted = true; // Ensure it's muted
-          video.loop = true; // Ensure it loops
-          video.autoplay = true; // Attempt to autoplay
-          video.playsInline = true; // Ensure it works on mobile
-
-          video.play().catch((error) => {
-            console.error("Autoplay prevented:", error);
-            // If autoplay is blocked, play video on user interaction
-            document.body.addEventListener("click", () => video.play(), {
-              once: true,
-            });
-          });
-        }
-      });
-    </script>
+    <script src="script.js" alt="Ousman Bah Profile Picture"></script>
   </body>
-  <script src="script.js" alt="Ousman Bah Profile Picture"></script>
 </html>
