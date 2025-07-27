@@ -77,9 +77,11 @@ body {
 /* Navigation */
 nav {
   position: fixed;
-  top: 50%;
+  /* top: 50%; */
+  top: 1.5rem;
   left: 50%;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
+  transform: translateX(-50%);
   padding: 0.6rem 1.2rem;
   display: flex;
   justify-content: center;
@@ -144,6 +146,7 @@ nav {
 }
 
 .hero-image {
+  margin-top: 2rem;
   margin-bottom: 2rem;
   position: relative;
   z-index: 2;
@@ -1001,9 +1004,7 @@ footer p {
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
   nav {
-    padding: 0.5rem 0.8rem;
-    top: 1rem;
-    max-width: 90%;
+    display: none;
   }
 
   .nav-links a {
