@@ -3,635 +3,1058 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
+    <title>Ousman Bah - Software Engineer</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <!-- Background Video -->
-
-    <div class="video-container">
-      <video muted loop playsinline id="background-video">
-        <source src="assets/video2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-
-    <nav id="desktop-nav">
-      <div class="logo">
-        <a href="index.html"
-          ><img class="new-img img-rounded" src="assets/logo2.png" alt="Google"
-        /></a>
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+      <div class="header-left">
+        <a href="index.html" class="site-title-link">
+          <h1>Ousman Bah</h1>
+          <p class="header-title">Aspiring Software Engineer</p>
+        </a>
       </div>
-      <div>
+      <!-- Navigation -->
+      <nav>
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
           <li><a href="#projects">Projects</a></li>
-          <li><a href="#interest">Interest & Activities </a></li>
-          <li><a href="#contact">Contacts</a></li>
+          <li><a href="#leadership">Leadership</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+      </nav>
+
+      <a
+        href="https://www.linkedin.com/in/ousman-bah"
+        target="_blank"
+        class="header-resume-btn"
+        >Linkedin</a
+      >
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-image">
+        <img
+          src="assets/about-pic.png"
+          alt="Ousman Bah"
+          class="profile-image"
+        />
       </div>
-    </nav>
-
-    <nav id="hamburger-nav">
-      <div class="logo">OUSMAN BAH</div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#interests" onclick="toggleMenu()">Interests</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contacts</a></li>
-        </div>
-      </div>
-    </nav>
-
-    <section id="profile">
-      <div class="section__pic-container">
-        <img class="img-rounded" src="./assets/about-pic.png" alt="" />
-      </div>
-
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-
-        <h1 class="title">Ousman Bah</h1>
-        <p class="section__text__p2">Full Stack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="window.open('./assets/MyNewResume.pdf')"
+      <div class="hero-content">
+        <h1>Ousman Bah</h1>
+        <p class="hero-subtitle">
+          Student @ Florida International University | B.S. Computer Science |
+          Google Tech Exchange (Cohort 2025) | AI/ML Fellow @ Break Through
+          Tech–Cornell | NCSC Honors Student
+        </p>
+        <p class="subtitle">Aspiring Software Engineer & AI Enthusiast</p>
+        <p class="description">
+          On a journey to build meaningful tech that supports underrepresented
+          communities.
+        </p>
+        <div class="cta-buttons">
+          <a href="#projects" class="btn btn-primary">View My Work</a>
+          <a
+            href="./assets/MyNewResume.pdf"
+            class="btn btn-secondary"
+            target="_blank"
+            >Download Resume</a
           >
-            Download My Resume
-          </button>
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./SSR_TSRPT.pdf')"
-          >
-            Download My Transcript
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My Linkedin Profile"
-            class="icon"
-            onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github Profile"
-            class="icon"
-            onclick="location.href='https://github.com/Ousmanbah10'"
-          />
+          <a href="#contact" class="btn btn-primary">Get In Touch</a>
         </div>
       </div>
     </section>
 
+    <!-- About Section -->
     <section id="about">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/profile-pic.png"
-            alt="Profile picture"
-            class="about-pic img-rounded"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Florida International University</h3>
-              <h4>BSC Computer Science</h4>
-              <p>Sophomore | GPA 4.0</p>
+      <div class="about-content">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-grid">
+          <div class="about-text">
+            <h3>Hi, I'm Ousman!</h3>
+            <p>
+              I'm a junior Computer Science student at Florida International
+              University, passionate about building tools that drive real-world
+              impact especially in underrepresented communities.
+            </p>
+            <p>
+              I've gained hands-on experience through the Google Tech Exchange
+              and the Break Through Tech AI Fellowship at Cornell Tech, where I
+              explored generative AI, scalable systems, and real-world machine
+              learning applications. I've also worked on AI projects and
+              full-stack applications across mobile, web, and cloud
+              environments.
+            </p>
+            <p>
+              I enjoy competitive programming and am a member of the FIU
+              Competitive Programming Team. I've competed in two ICPC USA
+              Regional competitions and love solving algorithmic challenges and
+              mentoring others in data structures and problem solving.
+            </p>
+            <p>
+              I'm looking forward to connecting with like-minded CS peers,
+              industry professionals, and potential mentors!
+            </p>
+          </div>
+          <div class="about-stats">
+            <div class="stats-grid">
+              <div class="stat-item">
+                <span class="stat-number">4.0</span>
+                <span class="stat-label">GPA at FIU</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">2x</span>
+                <span class="stat-label">ICPC Regional Competitor</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">NCSC</span>
+                <span class="stat-label">Honors Student</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number">10+</span>
+                <span class="stat-label">Projects Built</span>
+              </div>
             </div>
-            <!-- <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-            
-               <h3>Experience</h3>
-              <p>2+ years</p> -->
-            <!-- < /div> -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience">
+      <div class="experience-content">
+        <h2 class="section-title">Professional Experience</h2>
+        <p class="section-subtitle">
+          From AI fellowships to real-world impact across government and tech.
+        </p>
+
+        <div class="experience-grid">
+          <div class="experience-card">
+            <div class="experience-logo google-logo">
+              <img src="assets/experience photos/google.jpeg" alt="Google" />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">Jan 2025 - May 2025</div>
+              <div class="experience-badges">
+                <div class="experience-badge">Google</div>
+                <a
+                  href="https://research.google/pubs/google-tech-exchange-an-industry-academic-partnership-that-prepares-black-and-latinx-undergraduates-for-high-tech-careers/"
+                  class="experience-badge link-badge"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <h3>Google Tech Exchange Program</h3>
+            <p class="experience-company">Google (Tech Fellow)</p>
+            <p class="experience-description">
+              Semester-long Google-led program developing skills in software
+              engineering and AI. Coursework in generative AI, algorithms,
+              system design, and deployment using Google Cloud with mentorship
+              from Google engineers.
+            </p>
           </div>
 
-          <div class="text-container">
-            <p>
-              <strong>
-                I am a driven Computer Science student with a strong foundation
-                in programming, algorithms, and software development. My passion
-                lies in problem-solving and building innovative solutions that
-                drive efficiency and impact. Through my academic journey and
-                hands-on experiences, I have honed my skills in collaborative
-                development, competitive programming, and technical mentorship.
-                I thrive in dynamic environments where I can contribute
-                meaningfully, learn from diverse perspectives, and leverage
-                technology to create positive change.
-              </strong>
+          <div class="experience-card">
+            <div class="experience-logo elerus-logo">
+              <img
+                src="assets/experience photos/ElurisAI.jpeg"
+                alt="Elerus AI"
+              />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">June 2025 - Present</div>
+              <div class="experience-badges">
+                <div class="experience-badge">Current</div>
+                <!-- <a href="#" class="experience-badge link-badge">View Details</a> -->
+              </div>
+            </div>
+            <h3>Software Engineer Intern</h3>
+            <p class="experience-company">Elerus AI (Startup)</p>
+            <p class="experience-description">
+              Contributing to AI-powered coding platform development in a
+              fast-paced startup environment. Gaining hands-on experience with
+              modern AI/ML technologies and agile development practices.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-logo fiu-logo">
+              <img src="assets/experience photos/FIU.jpeg" alt="FIU" />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">May 2025 - June 2025</div>
+              <div class="experience-badges">
+                <div class="experience-badge">Engineering</div>
+                <a
+                  href="https://panthersoft.fiu.edu"
+                  class="experience-badge link-badge"
+                  target="_blank"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+            <h3>Software Engineering Sprintern</h3>
+            <p class="experience-company">FIU PantherSoft</p>
+            <p class="experience-description">
+              Developed parking recommendation app using Flutter and GeoLocator
+              for FIU's 50,000+ students. Built location-based scoring system
+              that improved navigation efficiency by 35% and reduced campus
+              traffic congestion by 27%.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-logo cornell-logo">
+              <img
+                src="assets/experience photos/Cornell.jpeg"
+                alt="Cornell Tech"
+              />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">May 2025 - Present</div>
+              <div class="experience-badges">
+                <div class="experience-badge">Fellowship</div>
+                <a
+                  href="https://www.breakthroughtech.org/programs/the-ai-program/"
+                  class="experience-badge link-badge"
+                  >View Details</a
+                >
+              </div>
+            </div>
+            <h3>Break Through Tech AI Fellow</h3>
+            <p class="experience-company">
+              Cornell Tech & Break Through Tech Miami
+            </p>
+            <p class="experience-description">
+              Selected from 1,000+ applicants for competitive summer-long AI
+              fellowship. Completed 100+ hours training in supervised learning,
+              responsible AI, and ML pipelines with mentorship from Cornell
+              faculty and industry engineers.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-logo fiu-logo">
+              <img
+                src="assets/experience photos/Competitivt programming.jpeg"
+                alt="FIU Programming"
+              />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">Sept 2024 & Oct 2024</div>
+              <div class="experience-badges">
+                <div class="experience-badge">ICPC</div>
+                <a
+                  href="https://academy.cs.fiu.edu/programming-competitions/"
+                  class="experience-badge link-badge"
+                  target="_blank"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+            <h3>FIU Competitive Programming Team</h3>
+            <p class="experience-company">ICPC & ShellHacks Hackathon</p>
+            <p class="experience-description">
+              Represented FIU twice in the ICPC Southeast Regional competition
+              as team lead. Mentor weekly sessions teaching students algorithms
+              and problem-solving techniques to prepare for competitions.
+              Participated in 3 hackathons developing expertise in various
+              technologies.
+            </p>
+          </div>
+
+          <div class="experience-card">
+            <div class="experience-logo gambia-logo">
+              <img
+                src="assets/experience photos/MOFEA.jpeg"
+                alt="Gambia Ministry"
+              />
+            </div>
+            <div class="experience-header">
+              <div class="experience-date">Jan 2020 - Aug 2023</div>
+              <div class="experience-badges">
+                <div class="experience-badge">Government</div>
+                <a
+                  href="https://mofea.gov.gm/"
+                  class="experience-badge link-badge"
+                  target="_blank"
+                >
+                  View Details
+                </a>
+              </div>
+            </div>
+            <h3>Accounts Clerk</h3>
+            <p class="experience-company">Ministry of Finance, The Gambia</p>
+            <p class="experience-description">
+              Led implementation of The Gambia's first electronic fund transfer
+              system, reducing government payment processing from three days to
+              same-day transactions. Managed nationwide payments affecting
+              thousands of citizens and collaborated with Central Bank
+              executives and government ministers on high-level financial
+              operations.
+            </p>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem">
+          <a href="experience.html" target="_blank" class="btn btn-secondary"
+            >View All Experiences →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="skills-content">
+        <h2 class="section-title">Technical Expertise</h2>
+        <p class="section-subtitle">
+          My technical stack spans AI/ML, full-stack development, and cloud
+          technologies.
+        </p>
+
+        <div class="skills-grid">
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <h4>Programming Languages</h4>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+                  alt="Python"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Python
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                JavaScript
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg"
+                  alt="Java"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Java
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  alt="HTML/CSS"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                HTML/CSS
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg"
+                  alt="C"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                C
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg"
+                  alt="SQL"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                SQL
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/dart/dart-original.svg"
+                  alt="Dart"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Dart
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg"
+                  alt="Shell"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Shell
+              </span>
+              <span class="skill-tag">JSON</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <h4>Frameworks & Libraries</h4>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MEAN"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                MEAN Stack
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                  alt="Django"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Django
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+                  alt="React"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                React
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                  alt="Node.js"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Node.js
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg"
+                  alt="Express.js"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Express.js
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg"
+                  alt="FastAPI"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                FastAPI
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg"
+                  alt="Flutter"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Flutter
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/streamlit/streamlit-original.svg"
+                  alt="Streamlit"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Streamlit
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/spring/spring-original.svg"
+                  alt="Spring Boot"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Spring Boot
+              </span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <div class="skill-icon"></div>
+              <h4>AI/ML & Data Science</h4>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg"
+                  alt="PyTorch"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                PyTorch
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg"
+                  alt="TensorFlow"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                TensorFlow
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/scikitlearn/scikitlearn-original.svg"
+                  alt="scikit-learn"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                scikit-learn
+              </span>
+              <span class="skill-tag">LangChain</span>
+              <span class="skill-tag">OpenAI API</span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg"
+                  alt="NumPy"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                NumPy
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg"
+                  alt="Pandas"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Pandas
+              </span>
+              <span class="skill-tag">Qdrant</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <h4>Databases & Cloud</h4>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg"
+                  alt="MongoDB"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                MongoDB
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg"
+                  alt="PostgreSQL"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                PostgreSQL
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+                  alt="Google Cloud"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Google Cloud
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+                  alt="Docker"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Docker
+              </span>
+              <span class="skill-tag">BigQuery</span>
+            </div>
+          </div>
+
+          <div class="skill-category">
+            <div class="skill-category-header">
+              <h4>Developer Tools</h4>
+            </div>
+            <div class="skill-tags">
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
+                  alt="VS Code"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                VS Code
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
+                  alt="Git/GitHub"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Git/GitHub
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/eclipse/eclipse-original.svg"
+                  alt="Eclipse"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Eclipse
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/androidstudio/androidstudio-original.svg"
+                  alt="Android Studio"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Android Studio
+              </span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/xcode/xcode-original.svg"
+                  alt="Xcode"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Xcode
+              </span>
+              <span class="skill-tag">Postman</span>
+              <span class="skill-tag">Auth0</span>
+              <span class="skill-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+                  alt="Linux"
+                  style="width: 16px; height: 16px; margin-right: 6px"
+                />
+                Linux
+              </span>
+            </div>
+          </div>
+        </div>
+        <div style="text-align: center; margin-top: 4rem">
+          <a
+            href="certifications.html"
+            target="_blank"
+            class="btn btn-secondary"
+            >View My Certifications →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects-content">
+        <h2 class="section-title">Featured Work</h2>
+        <p class="section-subtitle">
+          A selection of projects showcasing my technical skills and
+          problem-solving approach.
+        </p>
+
+        <div class="projects-grid">
+          <!-- Fitness Tracker -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <img
+                src="assets/experience photos/FITNESSTRACKERLOGO.jpeg"
+                alt="Fitness Tracker"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Fitness Challenge Tracker</h3>
+              <p class="project-description">
+                Interactive fitness platform with challenges, real-time
+                leaderboards, and social feed. Integrated Auth0 for secure login
+                and AI-powered fitness insights.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Streamlit</span>
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">Auth0</span>
+                <span class="tech-tag">BigQuery</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://e3-service-3f5vvzd3pq-uc.a.run.app/"
+                  class="project-link"
+                  target="_blank"
+                >
+                  View Demo →
+                </a>
+                <a
+                  href="https://github.com/Ousmanbah10/AI-Fitness-Tracker-App"
+                  target="_blank"
+                  class="project-link"
+                >
+                  View Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Severus AI -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <img
+                src="assets/experience photos/SEVERUSAILOGO.JPEG"
+                alt="Severus AI"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">
+                Severus AI - Interview Prep Platform
+              </h3>
+              <p class="project-description">
+                Full-stack AI interview platform hosting 50+ mock sessions with
+                real-time adaptive feedback. Architected structured agent flows
+                via LangChain with 95% accuracy in multi-turn logic.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Python</span>
+                <span class="tech-tag">FastAPI</span>
+                <span class="tech-tag">LangChain</span>
+                <span class="tech-tag">OpenAI</span>
+                <span class="tech-tag">Google Cloud</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Product →</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Smart Parking -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <img src="assets/PARKINGLOGO.jpeg" alt="Smart Parking FIU" />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Smart Parking Assistant - FIU</h3>
+              <p class="project-description">
+                Built a mobile smart parking assistant with Flutter and Dart to
+                help FIU students find optimal parking based on schedule,
+                proximity, and real-time data. Integrated LLaMA 4.0 for AI
+                decisions, n8n for automation, and tested APIs with Postman.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">Dart</span>
+                <span class="tech-tag">LLaMA 4.0</span>
+                <span class="tech-tag">n8n</span>
+                <span class="tech-tag">API</span>
+                <span class="tech-tag">Postman</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://drive.google.com/file/d/1PEN8Av77r2frngDYpFIFlSIvJJ7qsYdx/view?usp=sharing"
+                  class="project-link"
+                  target="_blank"
+                >
+                  View Demo →
+                </a>
+                <a
+                  href="https://github.com/Ousmanbah10/Smart-Parking"
+                  target="_blank"
+                  class="project-link"
+                >
+                  View Code →
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Eat Bites -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <div style="color: white; font-size: 1.2rem; font-weight: 600">
+                Eat Bites
+              </div>
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Eat Bites - Food Delivery Platform</h3>
+              <p class="project-description">
+                DoorDash-style delivery app built with my brother using Flutter
+                and PostgreSQL. Real-time tracking with Google Maps API.
+                Launching in The Gambia with 50+ restaurants.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Flutter</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Google Maps</span>
+                <span class="tech-tag">Claude API</span>
+              </div>
+              <div class="project-links">
+                <a href="#" class="project-link">View Demo →</a>
+                <a href="#" class="project-link">Coming Soon In The Gambia→</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neural Networks -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <img
+                src="assets/experience photos/DeepLearning.jpeg"
+                alt="Deep Learning"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">Neural Networks & Language Models</h3>
+              <p class="project-description">
+                Built GPT-style language model and neural networks from scratch
+                using PyTorch. Custom tokenization, manual gradient updates, and
+                MLP/CNN architectures for text generation.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">PyTorch</span>
+                <span class="tech-tag">NumPy</span>
+                <span class="tech-tag">NLP</span>
+                <span class="tech-tag">Deep Learning</span>
+                <span class="tech-tag">Backpropagation</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Ousmanbah10/AI-PROJECTS-2.0"
+                  target="_blank"
+                  class="project-link"
+                  >View Code →</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- E-Commerce API -->
+          <div class="project-card">
+            <div
+              class="project-image"
+              style="
+                background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+              "
+            >
+              <img
+                src="assets/experience photos/eCommerce.jpeg"
+                alt="Ecommerce API"
+              />
+            </div>
+            <div class="project-content">
+              <h3 class="project-title">E-Commerce REST API</h3>
+              <p class="project-description">
+                Scalable e-commerce backend with JWT authentication, product
+                management, and order processing. Optimized for performance and
+                efficient CRUD operations.
+              </p>
+              <div class="project-tech">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">MongoDB</span>
+                <span class="tech-tag">JWT</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://github.com/Ousmanbah10/E-Commerce-API.git"
+                  target="_blank"
+                  class="project-link"
+                  >View Code →</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div style="text-align: center; margin-top: 4rem">
+          <a
+            href="https://github.com/ousmanbah10"
+            target="_blank"
+            class="btn btn-secondary"
+            >View All Projects →</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership & Volunteer Section -->
+    <section id="leadership">
+      <div class="leadership-content">
+        <h2 class="section-title">Leadership & Impact</h2>
+        <p class="section-subtitle">
+          Off-Duty Developer Mode 🕶️ Things I do when I'm not coding.
+        </p>
+
+        <div class="leadership-grid">
+          <div class="leadership-card">
+            <div class="leadership-image">
+              <img src="assets/BTT.jpeg" alt="Break Through Tech Miami Logo" />
+            </div>
+            <h3>Break Through Tech Miami</h3>
+            <p class="leadership-role">Freshman Welcome Leader</p>
+            <p class="leadership-description">
+              Led welcoming initiatives for incoming students and engaged in
+              programs supporting underrepresented groups in tech through
+              mentorship and workshops.
+            </p>
+          </div>
+
+          <div class="leadership-card">
+            <div class="leadership-image">
+              <img src="assets/Dell.jpeg" alt="Dell EXCEL Program Logo" />
+            </div>
+            <h3>Dell EXCEL Program</h3>
+            <p class="leadership-role">Competition Participant</p>
+            <p class="leadership-description">
+              Participated in a hands-on 8-week case competition focused on AI
+              and modernization, collaborating with a diverse team to analyze
+              real-world business problems and develop AI-driven solutions.
+            </p>
+          </div>
+
+          <div class="leadership-card">
+            <div class="leadership-image">
+              <img src="assets/init_fiu.jpeg" alt="INIT FIU Logo" />
+            </div>
+            <h3>INIT FIU</h3>
+            <p class="leadership-role">Member</p>
+            <p class="leadership-description">
+              Attended workshops and seminars on emerging technologies, software
+              development, and entrepreneurship, gaining insights into
+              real-world applications and industry best practices.
+            </p>
+          </div>
+
+          <div class="leadership-card">
+            <div class="leadership-image">
+              <img src="assets/unnamed-2.png" alt="FIFA Club World Cup Logo" />
+            </div>
+            <h3>FIFA Club World Cup</h3>
+            <p class="leadership-role">Event Support Volunteer</p>
+            <p class="leadership-description">
+              Provided event support for the prestigious FIFA Club World Cup,
+              coordinating logistics and enhancing the experience for
+              international visitors.
             </p>
           </div>
         </div>
       </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
     </section>
 
-    <section id="experience">
-      <p class="section__text__p1">Explore My</p>
-
-      <!-- Here -->
-      <h1 class="title">Technical Skills & Professional Experience</h1>
-      <div>
-        <!-- TECHNICAL EXPERIENCE -->
-        <h5 class="title2">Technical Skills</h5>
-        <div class="experience-details-container">
-          <div class="about-containers">
-            <div class="skills-container">
-              <!-- Programming Languages & Technologies -->
-              <div class="details-container tech-container">
-                <h2 class="experience-sub-title">
-                  Programming Languages & Technologies
-                </h2>
-                <ul class="experience-list">
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    <strong>Languages:</strong> Python, Java, JavaScript, SQL,
-                    HTML/CSS
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    <strong>Frameworks:</strong> Node.js, Express.js, Django,
-                    MEAN Stack
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    <strong>Databases:</strong> MongoDB, PostgreSQL
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    <strong>Cloud & DevOps:</strong> Google Cloud Platform,
-                    Docker
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    <strong>Tools:</strong> VS Code, Eclipse, GitHub, Linux
-                  </li>
-                </ul>
-              </div>
-
-              <!-- Relevant Course Work -->
-              <div class="details-container tech-container">
-                <h2 class="experience-sub-title">Relevant Coursework</h2>
-                <ul class="experience-list">
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Calculus I
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Systems Programming
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Database Management
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Web Development
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Artificial Intelligence
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Discrete Math
-                  </li>
-                  <li>
-                    <img
-                      src="./assets/checkmark.png"
-                      alt="Icon"
-                      class="tech-icon"
-                    />
-                    Data Structures & Algorithms
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Here -->
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="window.location.href='certifications.html'"
-          >
-            View my Certifcations
-          </button>
-        </div>
-
-        <!-- End of technical experience -->
-        <!-- Second section -->
-        <!-- Second section -->
-        <div class="professional-experience">
-          <h1 class="title2">Professional Experience</h1>
-          <div class="details-container2">
-            <div class="experience-details-container">
-              <div class="details-container">
-                <h5>Google Tech Exchange</h5>
-                <ul>
-                  <li>
-                    Selected for the Google Tech Exchange Program, an elite
-                    initiative for top computer science students.
-                  </li>
-                  <li>
-                    Developing industry-driven projects and collaborating with
-                    Google engineers to enhance software development and
-                    problem-solving skills.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="details-container">
-                <h5>ICPC & ShellHacks Hackathon | Sept 2024 & Oct 2024</h5>
-                <ul>
-                  <li>
-                    Represented MSUM and led the FIU team in ICPC, mentoring
-                    teammates in advanced problem-solving techniques and
-                    competitive programming strategies.
-                  </li>
-                  <li>
-                    Served as part of the FIU High School Competitive
-                    Programming Hosting Committee, assisting in organizing and
-                    managing programming contests for high school students.
-                  </li>
-                  <li>
-                    Trained and mentored high school teachers to prepare their
-                    students for competitive programming, ensuring they
-                    understood problem-solving techniques, algorithms, and
-                    contest strategies.
-                  </li>
-                  <li>
-                    Developed expertise in Machine Learning, Web Development,
-                    and Robotics through hands-on hackathon challenges and
-                    technical workshops.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="details-container">
-                <h5>ACM Club MSUM | Aug 2023 – July 2024</h5>
-                <ul>
-                  <li>
-                    Secured 2nd place in the ACM programming contest, showcasing
-                    proficiency in data structures and algorithms.
-                  </li>
-                  <li>
-                    Conducted peer-to-peer tutoring, mentoring 5 students in
-                    Python programming and problem-solving techniques.
-                  </li>
-                  <li>
-                    Led twice-weekly coding sessions, ensuring students achieved
-                    a B or higher in coursework through structured learning
-                    plans.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="details-container">
-                <h5>
-                  Ministry of Finance | Accounts Clerk | Jan 2020 - Aug 2023
-                </h5>
-                <ul>
-                  <li>
-                    Led the transition to The Gambia’s first electronic fund
-                    transfer system, streamlining government payments and
-                    reducing processing time from three days to same-day
-                    transactions.
-                  </li>
-                  <li>
-                    Managed and processed nationwide payments, including
-                    salaries, pensions, and vendor transactions, ensuring timely
-                    disbursement that impacted thousands of lives.
-                  </li>
-                  <li>
-                    Acted as a liaison between government accountants and
-                    software vendors, ensuring a seamless integration of
-                    financial systems and training staff on the new platform.
-                  </li>
-                  <li>
-                    Collaborated with high-ranking officials, including Central
-                    Bank executives and government ministers, gaining firsthand
-                    insight into high-level financial decision-making.
-                  </li>
-                </ul>
-              </div>
-
-              <div class="btn-container">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="window.location.href='experience.html'"
-                >
-                  Learn More About My Experiences
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Second section here  -->
-      </div>
-    </section>
-
-    <section id="projects">
-      <p class="section__text__p1">Browse My Recent</p>
-
-      <h1 class="title">Projects</h1>
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/EcommerceStore.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">E-Commerce API</h2>
-            <div class="button-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
-              >
-                Live Demo
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ousmanbah10/E-Commerce-API.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/taskmanager.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">Task Manager</h2>
-            <div class="button-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://task-manager-69b3.onrender.com'"
-              >
-                Live Demo
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ousmanbah10/TASK-MANAGER.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-          <div class="details-container color-container">
-            <div class="article-container">
-              <img
-                src="./assets/aiChatbot.jpeg"
-                alt="Project 1"
-                class="project-img"
-              />
-            </div>
-            <h2 class="experience-sub-title project-title">
-              Audio, Text and Analysis <br />AI-Powered App
-            </h2>
-            <div class="button-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://www.linkedin.com/in/ousman-bah'"
-              >
-                Live Demo
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/Ousmanbah10/conversational-app-api.git'"
-              >
-                Github
-              </button>
-            </div>
-          </div>
-        </div>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="window.location.href='https://www.github.com/ousmanbah10'"
-          >
-            View More Projects
-          </button>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow Icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <!-- Interest and Extracurricular Activities -->
-    <section id="interest">
-      <h1 class="title">INTERESTS & EXTRACURRICULAR ACTIVITIES</h1>
-
-      <div class="experience-details-container">
-        <div class="about-containers">
-          <div class="skills-container">
-            <!-- Dell EXCEL Program -->
-            <div class="details-container activity-container">
-              <h2 class="experience-sub-title">Dell EXCEL Program</h2>
-              <p><strong>Duration:</strong> 8-week case competition</p>
-              <p>
-                Participated in a hands-on competition focused on AI and
-                modernization, collaborating with a diverse team to analyze
-                real-world business problems and develop AI-driven solutions.
-              </p>
-              <img
-                src="./assets/Dell.jpeg"
-                alt="Arrow Icon"
-                onclick="location.href='https://www.wayup.com/i-Information-Technology-and-Services-j-Excel-with-Dell-2023-Dell-Technologies-126896945361855/'"
-              />
-            </div>
-
-            <!-- UKG Academy for CS & Education -->
-            <div class="details-container activity-container">
-              <h2 class="experience-sub-title">
-                UKG Academy for CS & Education
-              </h2>
-              <p><strong>Role:</strong> Member & Volunteer</p>
-              <p>
-                Assisted in organizing high school programming competitions,
-                guiding students in problem-solving, and fostering an interest
-                in computer science and technology careers.
-                <img
-                  src="./assets/UKG.png"
-                  alt="Arrow Icon"
-                  onclick="location.href='https://academy.cs.fiu.edu'"
-                />
-              </p>
-            </div>
-
-            <!-- Break Through Tech Miami -->
-            <div class="details-container activity-container">
-              <h2 class="experience-sub-title">Break Through Tech Miami</h2>
-              <p><strong>Role:</strong> Active Member</p>
-              <p>
-                Engaged in initiatives supporting underrepresented groups in
-                tech by participating in mentorship programs, networking events,
-                and skill-building workshops aimed at fostering inclusivity.
-              </p>
-              <img
-                src="./assets/BTT.jpeg"
-                alt="Arrow Icon"
-                onclick="location.href='https://miami.breakthroughtech.org'"
-              />
-            </div>
-
-            <!-- INIT FIU -->
-            <div class="details-container activity-container">
-              <h2 class="experience-sub-title">INIT FIU</h2>
-              <p><strong>Role:</strong> Member</p>
-              <p>
-                Attended workshops and seminars on emerging technologies,
-                software development, and entrepreneurship, gaining insights
-                into real-world applications and industry best practices.
-              </p>
-              <img
-                src="./assets/init_fiu.jpeg"
-                alt="Arrow Icon"
-                onclick="location.href='https://www.weareinit.org'"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
+    <!-- Contact Section -->
+    <!-- Contact Section -->
+    <section id="contact" class="contact-content">
       <p class="section__text__p1">Get In Touch</p>
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img src="./assets/email.png" alt="Email" class="icon conatct" />
-          <p>
-            <a href="mailto:obah002@fiu.edu"> Email</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
+
+      <div class="contact-methods">
+        <!-- Email -->
+        <a href="mailto:obah002@fiu.edu" class="contact-method">
           <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn Icon"
-            class="icon conatct"
+            src="./assets/email.jpeg"
+            alt="Email Icon"
+            class="icon contact"
           />
-          <p>
-            <a href="https://www.linkedin.com/in/ousman-bah"> LinkedIn</a>
-          </p>
-        </div>
-        <div class="contact-info-container">
+          <span>Email</span>
+        </a>
+
+        <!-- LinkedIn -->
+        <a
+          href="https://www.linkedin.com/in/ousman-bah"
+          class="contact-method"
+          target="_blank"
+        >
           <img
-            src="./assets/phone-icon.png"
+            src="./assets/linkedin.jpeg"
             alt="LinkedIn Icon"
-            class="icon conatct"
+            class="icon contact"
           />
-          <p>+1 (218) 213-7996</p>
+          <span>LinkedIn</span>
+        </a>
+
+        <!-- Phone -->
+        <div class="contact-method">
+          <img
+            src="./assets/phone-icon.jpeg"
+            alt="Phone Icon"
+            class="icon contact"
+          />
+          <span>+1 (218) 213-7996</span>
         </div>
       </div>
     </section>
 
+    <!-- Footer -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#interest">Interest & Activities </a></li>
-            <li><a href="#contact">Contacts</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Ousman Bah. All rights reserved</p>
+      <p>&copy; 2025 Ousman Bah. Crafted with passion and lots of coffee.</p>
     </footer>
-    <script src="script.js" alt="Ousman Bah Profile Picture"></script>
+
+    <script>
+      // Smooth scroll for navigation links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+            });
+          }
+        });
+      });
+
+      // Add scroll effect to navigation
+      window.addEventListener("scroll", function () {
+        const nav = document.querySelector("nav");
+        if (window.scrollY > 100) {
+          nav.classList.add("scrolled");
+        } else {
+          nav.classList.remove("scrolled");
+        }
+      });
+
+      // Update active navigation link
+      window.addEventListener("scroll", function () {
+        const sections = document.querySelectorAll("section");
+        const navLinks = document.querySelectorAll(".nav-links a");
+
+        let current = "";
+        sections.forEach((section) => {
+          const sectionTop = section.offsetTop;
+          const sectionHeight = section.clientHeight;
+          if (window.scrollY >= sectionTop - 200) {
+            current = section.getAttribute("id");
+          }
+        });
+
+        navLinks.forEach((link) => {
+          link.classList.remove("active");
+          if (link.getAttribute("href").substring(1) === current) {
+            link.classList.add("active");
+          }
+        });
+      });
+    </script>
   </body>
 </html>

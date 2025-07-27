@@ -3,128 +3,380 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Certifications | Ousman Bah</title>
+    <title>Ousman Bah - Certifications</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <div class="video-container">
-      <video muted loop playsinline id="background-video">
-        <source src="assets/video2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <a href="index.html"
-          ><img class="new-img img-rounded" src="assets/logo2.png" alt="Google"
-        /></a>
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+      <div class="header-left">
+        <a href="index.html" class="site-title-link">
+          <h1 class="header-name">Ousman Bah</h1>
+          <p class="header-title">Aspiring Software Engineer</p>
+        </a>
       </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#interest">Interest & Activities </a></li>
-          <li><a href="index.html#contact">Contacts</a></li>
-        </ul>
-      </div>
-    </nav>
+
+      <a
+        href="https://www.linkedin.com/in/ousman-bah"
+        target="_blank"
+        class="header-resume-btn"
+        >LinkedIn</a
+      >
+    </header>
 
     <!-- CERTIFICATIONS SECTION -->
-    <section class="certifications">
+    <section class="experience">
       <h1 class="title">My Certifications</h1>
-      <div class="certifications-container">
-        <div class="certification-card">
-          <h3>Node.js & Express Development</h3>
-          <p><strong>Date:</strong> January 2024</p>
-          <p>
-            Acquired hands-on experience in <strong>Node.js</strong> and
-            <strong>Express.js</strong>, focusing on backend development,
-            RESTful API design, and server-side programming.
+      <p class="section-subtitle">
+        Professional development through continuous learning and skill
+        validation.
+      </p>
+
+      <div class="experience-container">
+        <!-- NCSC Honors Certificate -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo ncsc-logo">
+              <img src="assets/experience photos/NSCS.jpeg" alt="NSCS" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">2024 - Present</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Honors</span>
+                  <a
+                    href="assets/NSCS HONORS.pdf"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                  >
+                    View Certificate
+                  </a>
+                </div>
+              </div>
+              <h3>National Society of Collegiate Scholars</h3>
+              <p class="experience-company">NCSC Honors Member</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Inducted into the National Society of Collegiate Scholars,
+            recognizing academic excellence and commitment to scholarship,
+            leadership, and service.
           </p>
-          <a
-            href="assets/Code-path.png"
-            class="btn btn-color-1"
-            target="_blank"
-          >
-            View Certificate
-          </a>
-        </div>
-        <div class="certification-card">
-          <h3>Javascript Tutorial and Projects Course</h3>
-          <p><strong>Date:</strong> Jan 2025</p>
-          <p>
-            Completed an in-depth JavaScript course covering modern ES6+ syntax,
-            DOM manipulation, asynchronous programming, and front-end
-            development. Built multiple projects to apply concepts, improving
-            skills in React.js, event handling, and API integration.
-          </p>
-          <a
-            href="assets/Javascript.pdf"
-            class="btn btn-color-1"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-        <div class="certification-card">
-          <h3>HackerRank: Software Engineer Intern Certification</h3>
-          <p><strong>Date:</strong> Sept 2024</p>
-          <p>
-            Achieved certification in software engineering fundamentals through
-            HackerRank. Demonstrated proficiency in object-oriented programming
-            (OOP), database management, API development, and system design
-            principles.
-          </p>
-          <a
-            href="assets/Hacker-Rank.pdf"
-            class="btn btn-color-1"
-            target="_blank"
-            >View Certificate</a
-          >
-        </div>
-        <div class="certification-card">
-          <h3>DJANGO REST FRAMEWORK</h3>
-          <p><strong>Date:</strong> July 12, 2024</p>
-          <p>
-            Completed an advanced course on Django REST Framework, mastering API
-            development.
-          </p>
-          <a href="assets/Django.pdf" class="btn btn-color-1" target="_blank"
-            >View Certificate</a
-          >
+          <div class="achievements">
+            <ul>
+              <li>
+                Recognized for maintaining
+                <strong>exceptional academic performance</strong> with a
+                cumulative GPA of 4.0
+              </li>
+              <li>
+                Member of
+                <strong>prestigious honor society</strong> representing the top
+                20% of first and second-year college students
+              </li>
+              <li>
+                Commitment to
+                <strong>scholarship, leadership, and service</strong> within the
+                academic community
+              </li>
+              <li>
+                Access to exclusive
+                <strong>networking opportunities</strong> and professional
+                development resources
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <div class="certification-card">
-          <h3>CodePath Intro to Technical Interview Prep</h3>
-          <p><strong>Date:</strong> Summer 2024</p>
-          <p>
-            Gained expertise in cloud computing, including cloud architecture
-            and data management.
+        <!-- JavaScript Certification -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo javascript-logo">
+              <img src="assets/experience photos/JS.jpeg" alt="JS.js" />
+            </div>
+
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">January 2025</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">JavaScript</span>
+                  <a
+                    href="assets/Javascript.pdf"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+              <h3>JavaScript Tutorial and Projects Course</h3>
+              <p class="experience-company">Complete JavaScript Mastery</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Completed comprehensive JavaScript course covering modern ES6+
+            syntax, DOM manipulation, asynchronous programming, and front-end
+            development with multiple practical projects.
           </p>
-          <a href="assets/Code-path.png" class="btn btn-color-1" target="_blank"
-            >View Certificate</a
-          >
+          <div class="achievements">
+            <ul>
+              <li>
+                Mastered
+                <strong>modern ES6+ JavaScript syntax</strong> including arrow
+                functions, destructuring, and modules
+              </li>
+              <li>
+                Built
+                <strong>multiple interactive projects</strong> demonstrating DOM
+                manipulation and event handling
+              </li>
+              <li>
+                Gained expertise in
+                <strong>asynchronous programming</strong> with Promises,
+                async/await, and API integration
+              </li>
+              <li>
+                Applied concepts in <strong>React.js development</strong> and
+                modern front-end frameworks
+              </li>
+            </ul>
+          </div>
         </div>
+
+        <!-- Node.js & Express -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo nodejs-logo">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg"
+                alt="HR"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">January 2024</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Backend</span>
+                  <a
+                    href="assets/Code-path.png"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+              <h3>Node.js & Express Development</h3>
+              <p class="experience-company">
+                Backend Development Certification
+              </p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Acquired comprehensive knowledge in Node.js and Express.js, focusing
+            on backend development, RESTful API design, and server-side
+            programming.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Developed proficiency in
+                <strong>Node.js runtime environment</strong> and server-side
+                JavaScript
+              </li>
+              <li>
+                Mastered <strong>Express.js framework</strong> for building
+                robust web applications and APIs
+              </li>
+              <li>
+                Implemented <strong>RESTful API design patterns</strong> with
+                proper HTTP methods and status codes
+              </li>
+              <li>
+                Gained experience in
+                <strong>middleware implementation</strong> and server-side
+                routing
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- HackerRank Certification -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo hackerrank-logo">
+              <img src="assets/experience photos/hackerrank.jpeg" alt="HR" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">September 2024</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">SWE</span>
+                  <a
+                    href="assets/Hacker-Rank.pdf"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+              <h3>Software Engineer Intern Certification</h3>
+              <p class="experience-company">HackerRank Professional</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Achieved certification in software engineering fundamentals through
+            HackerRank, demonstrating proficiency in core programming concepts
+            and industry practices.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Demonstrated expertise in
+                <strong>object-oriented programming (OOP)</strong> principles
+                and design patterns
+              </li>
+              <li>
+                Proved competency in <strong>database management</strong> and
+                SQL query optimization
+              </li>
+              <li>
+                Showcased skills in <strong>API development</strong> and RESTful
+                service design
+              </li>
+              <li>
+                Applied <strong>system design principles</strong> for scalable
+                software architecture
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Django REST Framework -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo django-logo">
+              <img
+                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg"
+                alt="Django"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">July 2024</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Django</span>
+                  <a
+                    href="assets/Django.pdf"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+              <h3>Django REST Framework</h3>
+              <p class="experience-company">Advanced API Development</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Completed advanced course on Django REST Framework, mastering API
+            development with Python's most powerful web framework.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Mastered <strong>Django REST Framework architecture</strong> for
+                building scalable APIs
+              </li>
+              <li>
+                Implemented
+                <strong>authentication and authorization</strong> systems for
+                secure API access
+              </li>
+              <li>
+                Developed expertise in
+                <strong>serialization and validation</strong> of complex data
+                structures
+              </li>
+              <li>
+                Applied <strong>best practices</strong> for API versioning and
+                documentation
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- CodePath Interview Prep -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo codepath-logo">
+              <img src="assets/experience photos/codepath.jpeg" alt="Node.js" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">Summer 2024</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Interview Prep</span>
+                  <a
+                    href="assets/Code-path.png"
+                    class="experience-badge link-badge"
+                    target="_blank"
+                    >View Certificate</a
+                  >
+                </div>
+              </div>
+              <h3>Intro to Technical Interview Prep</h3>
+              <p class="experience-company">
+                CodePath Professional Development
+              </p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Completed intensive technical interview preparation program, gaining
+            essential skills for software engineering interviews and
+            problem-solving.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Mastered <strong>algorithmic problem-solving</strong> techniques
+                and data structure fundamentals
+              </li>
+              <li>
+                Practiced <strong>whiteboard coding</strong> and technical
+                communication skills
+              </li>
+              <li>
+                Developed strategies for
+                <strong>system design interviews</strong> and behavioral
+                questions
+              </li>
+              <li>
+                Enhanced <strong>time management</strong> and pressure-handling
+                abilities during technical assessments
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#interest">Interest & Activities </a></li>
-            <li><a href="index.html#contact">Contacts</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Ousman Bah. All rights reserved.</p>
+      <p>&copy; 2025 Ousman Bah. Crafted with passion and lots of coffee.</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>

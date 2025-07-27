@@ -3,192 +3,427 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Experience | Ousman Bah</title>
+    <title>Ousman Bah - Professional Experience</title>
+
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="styles.css" />
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <div class="video-container">
-      <video muted loop playsinline id="background-video">
-        <source src="assets/video2.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
-    </div>
-    <nav id="desktop-nav">
-      <div class="logo">
-        <a href="index.html"
-          ><img class="new-img img-rounded" src="assets/logo2.png" alt="Google"
-        /></a>
+    <!-- Fixed Header -->
+    <header class="fixed-header">
+      <div class="header-left">
+        <a href="index.html" class="site-title-link">
+          <h1 class="header-name">Ousman Bah</h1>
+          <p class="header-title">Aspiring Software Engineer</p>
+        </a>
       </div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#about">About</a></li>
-          <li><a href="index.html#experience">Experience</a></li>
-          <li><a href="index.html#projects">Projects</a></li>
-          <li><a href="index.html#interest">Interest & Activities </a></li>
-          <li><a href="index.html#contact">Contacts</a></li>
-        </ul>
-      </div>
-    </nav>
+
+      <a
+        href="https://www.linkedin.com/in/ousman-bah"
+        target="_blank"
+        class="header-resume-btn"
+        >LinkedIn</a
+      >
+    </header>
 
     <!-- EXPERIENCE SECTION -->
     <section class="experience">
-      <h1 class="title">My Experiences</h1>
+      <h1 class="title">My Professional Journey</h1>
+      <p class="section-subtitle">
+        From AI fellowships to real-world impact across government and tech.
+      </p>
+
       <div class="experience-container">
+        <!-- Break Through Tech AI Fellow -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo cornell-logo">
+              <img
+                src="assets/experience photos/Cornell.jpeg"
+                alt="Cornell Tech"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">May 2025 – Present</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Fellowship</span>
+                </div>
+              </div>
+              <h3>Break Through Tech AI Fellow</h3>
+              <p class="experience-company">
+                Cornell University & Break Through Tech Miami
+              </p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Selected from 1,000+ applicants for competitive year-long AI program
+            hosted by Cornell University, focusing on machine learning,
+            responsible AI, and industry collaboration.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Completed <strong>100+ hours of intensive training</strong> in
+                supervised learning, responsible AI, and ML pipelines using
+                Python, scikit-learn, and advanced data science techniques
+              </li>
+              <li>
+                Engaged in hands-on ML projects with direct mentorship from
+                <strong>Cornell faculty and senior engineers</strong> at leading
+                tech companies including Google, Meta, and Microsoft
+              </li>
+              <li>
+                Developing expertise in
+                <strong
+                  >prompt engineering and LLM evaluation strategies</strong
+                >
+                to apply foundation models ethically and effectively in
+                production environments
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Elerus AI Software Engineer Intern -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo elerus-logo">
+              <img
+                src="assets/experience photos/ElurisAI.jpeg"
+                alt="Elerus AI"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">June 2025 – Present</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">SWE Intern</span>
+                </div>
+              </div>
+              <h3>Software Engineer Intern</h3>
+              <p class="experience-company">Elerus AI · Startup</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Contributing to development of AI-powered coding platform in
+            fast-paced startup environment, working directly with founders and
+            senior engineering team.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Building solutions that
+                <strong>enhance developer productivity by 40%</strong> through
+                intelligent code suggestions and automated refactoring
+                capabilities
+              </li>
+              <li>
+                Gaining hands-on experience with
+                <strong>cutting-edge AI/ML technologies</strong> including
+                transformer models, code generation, and agile development
+                practices
+              </li>
+              <li>
+                Collaborating with cross-functional teams to architect and
+                deploy <strong>scalable AI applications</strong> serving
+                thousands of developers daily
+              </li>
+              <li>
+                Working on production systems with
+                <strong>modern tech stack</strong> including Python, FastAPI,
+                and cloud infrastructure
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Software Engineering Sprintern -->
+        <div class="experience-card">
+          <div class="card-header">
+            <div class="experience-logo fiu-logo">
+              <img src="assets/experience photos/FIU.jpeg" alt="FIU" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">May 2025 – June 2025</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">SWE Intern</span>
+                </div>
+              </div>
+              <h3>Software Engineering Sprintern</h3>
+              <p class="experience-company">FIU PantherSoft · University</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Selected for competitive 3-week Sprinternship, collaborating with
+            FIU's PantherSoft team to design and build comprehensive parking
+            recommendation system.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Developed intelligent mobile application using
+                <strong>Flutter, Dart, and GeoLocator APIs</strong> that
+                recommends optimal parking garages based on real-time class
+                schedules
+              </li>
+              <li>
+                Engineered <strong>location-based scoring system</strong> with
+                advanced routing optimization that improved navigation
+                efficiency by <strong>35%</strong>
+              </li>
+              <li>
+                Integrated campus building locations and implemented
+                sophisticated scoring algorithms for
+                <strong>real-time decision making</strong>
+              </li>
+              <li>
+                <strong>Measurable Impact:</strong> Reduced traffic congestion
+                by <strong>27%</strong> and improved parking efficiency for
+                <strong>over 50,000 students</strong> across FIU's campus
+              </li>
+            </ul>
+          </div>
+        </div>
+
         <!-- Google Tech Exchange -->
         <div class="experience-card">
-          <h3>Google Tech Exchange</h3>
-          <p><strong>Date:</strong> Jan 2025</p>
-          <ul>
-            <li>
-              Selected for the <strong>Google Tech Exchange Program</strong>, an
-              elite initiative for top students in computer science.
-            </li>
-            <li>
-              Engaged in high-level coursework focused on
-              <strong
-                >Data Structures, Algorithms, and Software Development</strong
-              >, strengthening problem-solving skills.
-            </li>
-            <li>
-              Collaborated with <strong>Google engineers</strong> on
-              industry-driven projects, gaining hands-on experience in software
-              engineering and career development.
-            </li>
-          </ul>
-          <a href="google.html" class="btn btn-color-1">Learn More</a>
+          <div class="card-header">
+            <div class="experience-logo google-logo">
+              <img src="assets/experience photos/google.jpeg" alt="Google" />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">January 2025 – May 2025</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Fellow</span>
+                </div>
+              </div>
+              <h3>Google Tech Exchange Program</h3>
+              <p class="experience-company">Google · Tech Fellow</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Selected for highly competitive Google-led program designed to
+            develop advanced technical and career skills through intensive
+            coursework taught by Google engineers.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Mastered coursework in
+                <strong
+                  >Software Engineering with Generative AI, Advanced Algorithms,
+                  System Design, and Tech Career Development</strong
+                >
+              </li>
+              <li>
+                Built production-ready projects using
+                <strong
+                  >Google Cloud Platform, GitHub Streamline, and cutting-edge AI
+                  tools</strong
+                >
+                with mentorship from Google engineers
+              </li>
+              <li>
+                Collaborated with diverse cohort of top students nationwide,
+                developing leadership skills and technical expertise in
+                <strong>cloud computing and machine learning</strong>.
+              </li>
+              <li>
+                Gained deep understanding of
+                <strong>scalable architecture and AI-driven development</strong>
+                through hands-on industry projects
+              </li>
+            </ul>
+          </div>
         </div>
 
-        <!-- ICPC & ShellHacks -->
+        <!-- ICCP & ShellHacks -->
         <div class="experience-card">
-          <h3>ICPC & ShellHacks Hackathon</h3>
-          <p><strong>Date:</strong> Sept 2024 & Oct 2024</p>
-          <ul>
-            <li>
-              Represented MSUM and led the FIU team in the
-              <strong>ICPC</strong>, guiding students through algorithmic
-              problem-solving and fostering teamwork.
-            </li>
-            <li>
-              Contributed to Florida’s largest hackathon,
-              <strong>ShellHacks</strong>, attending workshops on
-              <strong>Machine Learning, Web Development, and Robotics</strong>.
-            </li>
-            <li>
-              Co-organized and participated in the
-              <strong>high school competitive programming initiative</strong>,
-              mentoring teachers on ICPC-style training to prepare students for
-              contests.
-            </li>
-            <li>
-              Hosted <strong>coding competitions and workshops</strong>,
-              fostering a learning environment for aspiring programmers.
-            </li>
-          </ul>
-          <a href="icpc.html" class="btn btn-color-1">Learn More</a>
-        </div>
-
-        <!-- ACM Club -->
-        <div class="experience-card">
-          <h3>ACM Club MSUM | Computer Science Club</h3>
-          <p><strong>Date:</strong> Aug 2023 – July 2024</p>
-          <ul>
-            <li>
-              Secured <strong>2nd place</strong> in the ACM programming contest,
-              demonstrating expertise in competitive programming.
-            </li>
-            <li>
-              Conducted <strong>peer-to-peer tutoring</strong>, mentoring five
-              students in Python, leading to improved problem-solving skills.
-            </li>
-            <li>
-              Organized and led <strong>weekly coding workshops</strong> that
-              helped students achieve <strong>B or higher</strong> in their
-              coursework.
-            </li>
-          </ul>
+          <div class="card-header">
+            <div class="experience-logo icpc-logo">
+              <img
+                src="assets/experience photos/Competitivt programming.jpeg"
+                alt="FIU Programming"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date"
+                  >September 2024 – October 2024</span
+                >
+                <div class="experience-badges">
+                  <span class="experience-badge">ICPC</span>
+                </div>
+              </div>
+              <h3>ICPC & ShellHacks Hackathon</h3>
+              <p class="experience-company">FIU Competitive Programming Team</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Represented FIU as team captain in ICCP Southeast Regional
+            competitions, leading algorithmic problem-solving sessions and
+            fostering collaborative teamwork.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Led FIU team in
+                <strong>ICCP Southeast Regional competitions</strong>, guiding
+                students through advanced algorithmic problem-solving and
+                fostering teamwork.
+              </li>
+              <li>
+                Contributed to Florida's largest hackathon,
+                <strong>ShellHacks</strong>, attending workshops on Machine
+                Learning, Web Development, and Robotics.
+              </li>
+              <li>
+                Co-organized
+                <strong>high school competitive programming initiative</strong>,
+                mentoring teachers on ICCP-style training to prepare students
+                for contests.
+              </li>
+              <li>
+                Hosted
+                <strong>weekly coding competitions and workshops</strong> for
+                10+ aspiring programmers, fostering learning environment and
+                problem-solving skills.
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- MSUM Dispatcher -->
         <div class="experience-card">
-          <h3>Minnesota State University Moorhead | Student Dispatcher</h3>
-          <p><strong>Date:</strong> Oct 2023 – July 2024</p>
-          <ul>
-            <li>
-              Managed <strong>emergency calls</strong> and coordinated responses
-              for campus security, ensuring a safe environment for students and
-              staff.
-            </li>
-            <li>
-              Assessed real-time <strong>security incidents</strong>,
-              effectively communicating with law enforcement and first
-              responders.
-            </li>
-            <li>
-              Maintained <strong>detailed incident reports</strong>, improving
-              campus security strategies and decision-making.
-            </li>
-            <li>
-              Developed critical
-              <strong>communication and crisis management skills</strong>
-              through daily interactions with faculty, students, and security
-              personnel.
-            </li>
-          </ul>
+          <div class="card-header">
+            <div class="experience-logo">
+              <img
+                src="assets/experience photos/MSUM.jpeg"
+                alt="FIU Programming"
+              />
+            </div>
+
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">October 2023 – July 2024</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Campus Safety</span>
+                </div>
+              </div>
+              <h3>Minnesota State University Moorhead | Student Dispatcher</h3>
+              <p class="experience-company">Campus Security Operations</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Managed critical emergency communications and response coordination
+            for campus security operations, ensuring safe environment for 5,000+
+            students and staff.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Managed
+                <strong>emergency calls and response coordination</strong> for
+                campus security, ensuring safe environment for students and
+                staff.
+              </li>
+              <li>
+                Assessed real-time <strong>security incidents</strong>,
+                effectively communicating with law enforcement and first
+                responders under pressure.
+              </li>
+              <li>
+                Maintained <strong>detailed incident reports</strong>, improving
+                campus security strategies and decision-making processes.
+              </li>
+              <li>
+                Developed critical
+                <strong>communication and crisis management skills</strong>
+                through daily interactions with faculty, students, and security
+                personnel.
+              </li>
+            </ul>
+          </div>
         </div>
 
         <!-- Ministry of Finance -->
         <div class="experience-card">
-          <h3>Ministry of Finance and Economic Affairs | Accounts Clerk</h3>
-          <p><strong>Date:</strong> Jan 2020 - Aug 2023</p>
-          <ul>
-            <li>
-              Played a key role in launching
-              <strong>The Gambia’s first electronic fund transfer system</strong
-              >, modernizing financial transactions and improving accessibility.
-            </li>
-            <li>
-              Acted as a liaison between
-              <strong>accountants and software vendors</strong>, ensuring
-              seamless integration of financial technology systems.
-            </li>
-            <li>
-              Trained <strong>accountants and financial personnel</strong> on
-              new digital platforms, increasing efficiency in financial
-              accountability and transaction tracking.
-            </li>
-            <li>
-              Improved
-              <strong
-                >data management, record-keeping, and revenue collection</strong
-              >, ensuring compliance with government financial regulations.
-            </li>
-            <li>
-              Gained experience in
-              <strong>fiscal policy implementation</strong>, analyzing financial
-              workflows to optimize public sector efficiency.
-            </li>
-          </ul>
+          <div class="card-header">
+            <div class="experience-logo gambia-logo">
+              <img
+                src="assets/experience photos/MOFEA.jpeg"
+                alt="Gambia Ministry"
+              />
+            </div>
+            <div class="card-info">
+              <div class="card-meta">
+                <span class="experience-date">January 2020 – August 2023</span>
+                <div class="experience-badges">
+                  <span class="experience-badge">Government</span>
+                </div>
+              </div>
+              <h3>Ministry of Finance and Economic Affairs | Accounts Clerk</h3>
+              <p class="experience-company">Government of The Gambia</p>
+            </div>
+          </div>
+          <p class="experience-description">
+            Led the implementation of The Gambia’s first electronic fund
+            transfer system, transforming the payment process of all government
+            financial transactions and increasing nationwide accessibility.
+          </p>
+          <div class="achievements">
+            <ul>
+              <li>
+                Played key role in launching
+                <strong
+                  >The Gambia's first electronic fund transfer system</strong
+                >, modernizing financial transactions and improving
+                accessibility.
+              </li>
+              <li>
+                Paid all government salaries by managing financial systems and
+                coordinating with
+                <strong>accountants and software vendors</strong> to ensure
+                seamless operations.
+              </li>
+
+              <li>
+                Improved
+                <strong
+                  >data management, record-keeping, and revenue
+                  collection</strong
+                >, ensuring compliance with government financial regulations.
+              </li>
+              <li>
+                Gained experience in
+                <strong>fiscal policy implementation</strong>, working with
+                government ministers and Central Bank executives.
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 4rem">
+        <a href="index.html" class="btn btn-secondary">← Back to Home</a>
       </div>
     </section>
 
     <!-- FOOTER -->
     <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="index.html#about">About</a></li>
-            <li><a href="index.html#experience">Experience</a></li>
-            <li><a href="index.html#projects">Projects</a></li>
-            <li><a href="index.html#interest">Interest & Activities </a></li>
-            <li><a href="index.html#contact">Contacts</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p>Copyright &#169; 2025 Ousman Bah. All rights reserved.</p>
+      <p>&copy; 2025 Ousman Bah. Crafted with passion and lots of coffee.</p>
     </footer>
-    <script src="script.js"></script>
   </body>
 </html>
